@@ -15,7 +15,7 @@ public class DataGeneratorUtil {
     public static int generateRandomInt(int min, int max) {
 
         if (max > min) {
-            return random.nextInt(min, max);
+            return random.nextInt(max);
         } else {
             return 0;
         }
