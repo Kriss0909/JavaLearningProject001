@@ -41,12 +41,12 @@ public class InputFilesReadManager {
 
     public static void printDataFromAFileByUsingBufferReader(String filePath){
         FileReader fileReader =  null;
-        BufferedReader bufferedReader;
+        BufferedReader bufferedReader = null;
         try {
             fileReader = new FileReader(filePath);
             bufferedReader = new BufferedReader(fileReader);
             String line;
-            while((line = bufferedReader.readLine() != null){
+            while((line = bufferedReader.readLine()) != null){
                 System.out.print(line);
             }
         } catch (IOException e) {

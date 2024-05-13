@@ -9,7 +9,7 @@ public class FilesManager {
         try {
             return file.createNewFile();
         } catch (IOException e) {
-            System.out.println(exception.getMessage());
+            System.out.println(e.getMessage());
             return false;
         }
     }
